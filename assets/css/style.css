@@ -53,7 +53,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+  position: static;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -156,6 +156,13 @@ h3,
   border: 1px solid #ddd;
 }
 
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
 /* portfolio page */
 
 .work {
@@ -188,14 +195,6 @@ h3,
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
-}
-
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
 }
 
 /* contact page */
@@ -237,3 +236,23 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  #masthead {
+  position: fixed;
+  }
+  .main-section {
+    max-width: 100%;
+  }
+  .sidebar {
+    max-width: 100%;
+  }
+
+  .work {
+    width: 45%;
+  }
+
