@@ -238,6 +238,17 @@ input[type=submit] {
 }
 
 /* media queries */
+@media screen and (max-width: 980px) {
+  .container {
+    width: 80%;
+  } 
+  #main-container {
+    padding-top: 2px;
+  }
+  .main-section {
+    max-width: 50%; 
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     width: 95%;
@@ -256,3 +267,4 @@ input[type=submit] {
     width: 45%;
   }
 
+}
