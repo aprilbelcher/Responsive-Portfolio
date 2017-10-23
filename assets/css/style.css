@@ -253,6 +253,9 @@ input[type=submit] {
   #masthead {
   position: relative;
   }
+  #main-container {
+    padding-top: 0px;
+  }
   .main-section {
     max-width: 100%;
   }
@@ -265,17 +268,31 @@ input[type=submit] {
   }
 }
 @media screen and (max-width: 640px) {
-  .container {
-    position: static;
-  }
-  #logo {
-    float: left;
+  #masthead {
     width: 100%;
   }
+  .container {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+  }
+  #logo {
+    float: auto;
+    width: 100%;
+  }
+  #main-container {
+    padding-top: 0px;
+  }
   nav {
-    float: left;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
   }
   nav a {
+    margin: 0 auto;
+    padding: 10px;
+    width: 32%;
     text-align: center;
   }
   #main-container {
@@ -283,4 +300,5 @@ input[type=submit] {
   }
   .work {
     width: 100%;
+  }
 }
